@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sheet</title>
+    <style>
+        body {
+            background-color:antiquewhite ;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .box, .hover-box, .border-box {
+           width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .hover-box {
+            background-color: lightcoral;
+        }
+        .button-box {
+            margin: 10px;
+            color: cornflowerblue;
+        }
+        .dynamic-text {
+            margin: 20px;
+            font-size: 20px;
+        }
+        .border-box{
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Styling</h1>
+    
+    <div id="box" class="box">Click me to change color</div>
+    <div id="hoverBox" class="hover-box">Hover over me</div>
+    <div id="buttonBox" class="button-box"> 
+        <button>Click me to change text</button>
+    </div>
+    <div id="dynamicText" class="dynamic-text">Original Text</div>
+    <div id="borderBox" class="border-box">Double-click me</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
